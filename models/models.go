@@ -4,6 +4,7 @@ import (
 	"gorm.io/gorm"
 )
 
+
 type Fact struct {
 	gorm.Model
 	Question string `json:"question" gorm:"text; not null; default:null"`
